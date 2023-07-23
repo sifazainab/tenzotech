@@ -3,13 +3,17 @@
     <meta name="viewport" content="with=device-width, initial-scale=1.0">
     <title>AI Training Voice Recognition IELTS</title>
     <link rel="stylesheet" href="style.css">
-
+    <link rel="preconnect" href="<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600;700&display=swap" rel="stylesheet">"
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
 </head>
 <body>
     <section class="header">
         <nav>
             <a href="=index.html"><img src="images/LOGO-1.png"</a>
-            <div class="nav-links">
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
                 <ul>
                     <li><a href="">HOME</a></li>
                     <li><a href="">LOGIN</a></li>
@@ -17,11 +21,12 @@
                     <li><a href="">ABOUTUS</a></li>
                 </ul>
             </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
         <div class="text-box">
             <h1>GET IELTS EASY</h1>
             <p>Master Your IELTS Speaking with AI Voice Training.</p>
-            <a href="" class="hero-btn"></a>
+            <a href="" class="hero-btn"> Start Learning</a>
         </div>
     </section>
     <!------Features------->
@@ -72,5 +77,14 @@
     <h4>About Us</h4>
     <p>Mission Is To Bring The Power Of AI To Every Business<br>Tenzotech is Ed-tech brand company providing the most enterprise demanded specializations in artificial Intelligence, information technological know-how, machine getting to know, Deep studying, big information and Python full Stack improvement.</p>
 </section>
+<!---javaScript for Toggle Menu-->
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }</script>
 </body>
 </html>
